@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LeadGen - Automated Outreach</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Landing Page Specific Overrides */
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 4rem;
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-tertiary);
+            /* iOS gray for number bg */
+            color: var(--text-primary);
+            border-radius: 50%;
+            /* Circle */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect width="24" height="24" rx="6" fill="#007AFF" />
+                <path d="M12 6L16 10V16L12 20L8 16V10L12 6Z" stroke="white" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+            LeadGen
+        </div>
+        <div>
+            <a href="/dashboard" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        style="padding: 160px 24px 100px; text-align: center; max-width: 900px; margin: 0 auto; position: relative;">
+        <!-- Background Blob using CSS gradient -->
+        <div
+            style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,122,255,0.12) 0%, rgba(255,255,255,0) 70%); filter: blur(80px); z-index: -1;">
+        </div>
+
+        <h1 class="hero-title"
+            style="font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: -0.03em; margin-bottom: 24px; line-height: 1.1;">
+            Supercharge your<br>
+            <span
+                style="background: linear-gradient(135deg, #007AFF, #5856D6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Outreach
+                Workflow.</span>
+        </h1>
+        <p class="hero-subtitle"
+            style="font-size: 1.35rem; max-width: 540px; margin: 0 auto 40px; color: var(--text-secondary); line-height: 1.5;">
+            Automate lead generation and email campaigns with AI-driven personalization.
+        </p>
+        <div class="cta-group" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="/dashboard" class="btn btn-primary btn-lg">Get Started Free</a>
+            <a href="#how-it-works" class="btn btn-secondary btn-lg">How it Works</a>
+        </div>
+
+        <!-- Dashboard Preview -->
+
+    </section>
+
+    <!-- Stats Section -->
+    <section style="padding: 40px 24px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+        <div
+            style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+            <div class="stat-item">
+                <div style="font-size: 3rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">
+                    10k+</div>
+                <div style="font-size: 1rem; color: var(--text-secondary); font-weight: 500;">Leads Generated</div>
+            </div>
+            <div class="stat-item">
+                <div style="font-size: 3rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">98%
+                </div>
+                <div style="font-size: 1rem; color: var(--text-secondary); font-weight: 500;">Inbox Delivery</div>
+            </div>
+            <div class="stat-item">
+                <div style="font-size: 3rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">3x
+                </div>
+                <div style="font-size: 1rem; color: var(--text-secondary); font-weight: 500;">More Replies</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" style="padding: 100px 24px; background: var(--bg-primary);">
+        <h2 class="section-title">How it Works</h2>
+        <p class="section-subtitle">Three simple steps to automate your sales pipeline.</p>
+
+        <div
+            style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+            <!-- Step 1 -->
+            <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                <div class="step-number">1</div>
+                <div class="feature-card" style="height: 100%;">
+                    <div style="font-size: 40px; margin-bottom: 16px;">🔍</div>
+                    <h3>Search & Scrape</h3>
+                    <p>Enter your target keywords (e.g., "Dentists in Miami"). Our engine scrapes verified leads from
+                        Google Maps in seconds.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                <div class="step-number">2</div>
+                <div class="feature-card" style="height: 100%;">
+                    <div style="font-size: 40px; margin-bottom: 16px;">✨</div>
+                    <h3>AI Enrichment</h3>
+                    <p>We find valid email addresses and use AI to generate personalized opening lines based on their
+                        website content.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="card" style="border: none; background: transparent; box-shadow: none; padding: 0;">
+                <div class="step-number">3</div>
+                <div class="feature-card" style="height: 100%;">
+                    <div style="font-size: 40px; margin-bottom: 16px;">🚀</div>
+                    <h3>Launch Campaign</h3>
+                    <p>Review and send. Our system handles follow-ups automatically if they don't reply within 3 days.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" style="padding: 100px 24px;">
+        <h2 class="section-title">Powerful Features</h2>
+        <p class="section-subtitle">Everything you need to grow your business.</p>
+
+        <div
+            style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+            <div class="feature-card">
+                <div class="stat-icon stat-icon-blue">🌍</div>
+                <h3>Global Coverage</h3>
+                <p>Access millions of businesses worldwide. No restrictions on location or industry niche.</p>
+            </div>
+            <div class="feature-card">
+                <div class="stat-icon stat-icon-purple">🧠</div>
+                <h3>Contextual AI</h3>
+                <p>Our AI reads the prospect's website to understand their business, ensuring every email feels
+                    handwritten.</p>
+            </div>
+            <div class="feature-card">
+                <div class="stat-icon stat-icon-green">📊</div>
+                <h3>Real-time Tracking</h3>
+                <p>Monitor open rates, click-throughs, and replies instantly from your beautiful dashboard.</p>
+            </div>
+            <div class="feature-card">
+                <div class="stat-icon stat-icon-orange">⚡</div>
+                <h3>Instant Export</h3>
+                <p>Download your leads as CSV or sync them directly to your favorite CRM integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big CTA -->
+    <section style="padding: 100px 24px; text-align: center;">
+        <div
+            style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, #007AFF, #5856D6); padding: 60px 24px; border-radius: 32px; color: white; box-shadow: 0 20px 60px rgba(88, 86, 214, 0.4);">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 16px;">Ready to grow?</h2>
+            <p
+                style="color: rgba(255,255,255,0.9); font-size: 1.25rem; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                Join thousands of businesses automating their outreach today.
+            </p>
+            <a href="/dashboard" class="btn"
+                style="background: white; color: #007AFF; padding: 16px 32px; font-size: 1.1rem;">Get Started for
+                Free</a>
+        </div>
+    </section>
+
+    <footer
+        style="text-align: center; padding: 60px 24px; color: var(--text-tertiary); font-size: 14px; background: var(--bg-primary); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div style="margin-bottom: 24px; font-weight: 600; color: var(--text-primary);">LeadGen</div>
+        <p>&copy; 2025 LeadGen Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple Intersection Observer to trigger animations on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .stat-item, .hero-title, .hero-subtitle').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

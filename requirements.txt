@@ -1,0 +1,12 @@
+sqlalchemy
+google-search-results
+serpapi
+requests
+beautifulsoup4
+google-generativeai
+streamlit
+pandas
+python-dotenv
+plotly
+flask
+flask-cors
